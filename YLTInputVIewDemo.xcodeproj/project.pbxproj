@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5209C1DE4EF78D987ED486DE /* Pods_YLTInputVIewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D7CCDA1C3715F4878AE421E /* Pods_YLTInputVIewDemo.framework */; };
+		E84228AD20493CBD003D9EF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84228AC20493CBD003D9EF6 /* AppDelegate.swift */; };
+		E84228AF20493CBD003D9EF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84228AE20493CBD003D9EF6 /* ViewController.swift */; };
+		E84228B220493CBD003D9EF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E84228B020493CBD003D9EF6 /* Main.storyboard */; };
+		E84228B420493CBD003D9EF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E84228B320493CBD003D9EF6 /* Assets.xcassets */; };
+		E84228B720493CBD003D9EF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E84228B520493CBD003D9EF6 /* LaunchScreen.storyboard */; };
+		E84228C020493D5A003D9EF6 /* YLTInputToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84228BF20493D5A003D9EF6 /* YLTInputToolBar.swift */; };
+		E84228C220493D66003D9EF6 /* YLTInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84228C120493D66003D9EF6 /* YLTInputView.swift */; };
+		E84228C420493DB7003D9EF6 /* YLTInputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84228C320493DB7003D9EF6 /* YLTInputTextView.swift */; };
+		E84228C620493DFD003D9EF6 /* YLTInputPhotoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84228C520493DFD003D9EF6 /* YLTInputPhotoContainerView.swift */; };
+		E8788FF2204CE6C20065B6BA /* YLTInputViewDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8788FF1204CE6C20065B6BA /* YLTInputViewDefine.swift */; };
+		E8788FF7204D0C4E0065B6BA /* YLTInputView.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8788FF6204D0C4E0065B6BA /* YLTInputView.xcassets */; };
+		E8788FF9204D13080065B6BA /* YLTInputViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8788FF8204D13080065B6BA /* YLTInputViewConfig.swift */; };
+		E8788FFB204D425D0065B6BA /* YLTInputPhotoContainerViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8788FFA204D425D0065B6BA /* YLTInputPhotoContainerViewItem.swift */; };
+		E8A642B8204E5F5C00718A76 /* YLTInputAudioContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A642B7204E5F5C00718A76 /* YLTInputAudioContainerView.swift */; };
+		E8A642BA204E6F4500718A76 /* YLTInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A642B9204E6F4500718A76 /* YLTInputProtocol.swift */; };
+		E8D57E03204E38FE00323E0D /* YLTInputExpressionsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D57E02204E38FE00323E0D /* YLTInputExpressionsContainerView.swift */; };
+		E8D57E05204E3A9500323E0D /* YLTInputExpressionsContainerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D57E04204E3A9500323E0D /* YLTInputExpressionsContainerViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3607D750B6EAE30F3F7EC470 /* Pods-YLTInputVIewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLTInputVIewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLTInputVIewDemo/Pods-YLTInputVIewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5D7CCDA1C3715F4878AE421E /* Pods_YLTInputVIewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YLTInputVIewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BB39034300BB8126A74C2C0 /* Pods-YLTInputVIewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLTInputVIewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YLTInputVIewDemo/Pods-YLTInputVIewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E84228A920493CBD003D9EF6 /* YLTInputVIewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLTInputVIewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E84228AC20493CBD003D9EF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E84228AE20493CBD003D9EF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E84228B120493CBD003D9EF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E84228B320493CBD003D9EF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E84228B620493CBD003D9EF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E84228B820493CBD003D9EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E84228BF20493D5A003D9EF6 /* YLTInputToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLTInputToolBar.swift; sourceTree = "<group>"; };
+		E84228C120493D66003D9EF6 /* YLTInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLTInputView.swift; sourceTree = "<group>"; };
+		E84228C320493DB7003D9EF6 /* YLTInputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLTInputTextView.swift; sourceTree = "<group>"; };
+		E84228C520493DFD003D9EF6 /* YLTInputPhotoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLTInputPhotoContainerView.swift; sourceTree = "<group>"; };
+		E8788FF1204CE6C20065B6BA /* YLTInputViewDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLTInputViewDefine.swift; sourceTree = "<group>"; };
+		E8788FF6204D0C4E0065B6BA /* YLTInputView.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = YLTInputView.xcassets; sourceTree = "<group>"; };
+		E8788FF8204D13080065B6BA /* YLTInputViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLTInputViewConfig.swift; sourceTree = "<group>"; };
+		E8788FFA204D425D0065B6BA /* YLTInputPhotoContainerViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLTInputPhotoContainerViewItem.swift; sourceTree = "<group>"; };
+		E8A642B7204E5F5C00718A76 /* YLTInputAudioContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLTInputAudioContainerView.swift; sourceTree = "<group>"; };
+		E8A642B9204E6F4500718A76 /* YLTInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLTInputProtocol.swift; sourceTree = "<group>"; };
+		E8D57E02204E38FE00323E0D /* YLTInputExpressionsContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLTInputExpressionsContainerView.swift; sourceTree = "<group>"; };
+		E8D57E04204E3A9500323E0D /* YLTInputExpressionsContainerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLTInputExpressionsContainerViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E84228A620493CBD003D9EF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5209C1DE4EF78D987ED486DE /* Pods_YLTInputVIewDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B748C53499F805367E6FBD2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3607D750B6EAE30F3F7EC470 /* Pods-YLTInputVIewDemo.debug.xcconfig */,
+				7BB39034300BB8126A74C2C0 /* Pods-YLTInputVIewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C60BD73B19344F55B0EBB939 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D7CCDA1C3715F4878AE421E /* Pods_YLTInputVIewDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E84228A020493CBD003D9EF6 = {
+			isa = PBXGroup;
+			children = (
+				E84228AB20493CBD003D9EF6 /* YLTInputVIewDemo */,
+				E84228AA20493CBD003D9EF6 /* Products */,
+				2B748C53499F805367E6FBD2 /* Pods */,
+				C60BD73B19344F55B0EBB939 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E84228AA20493CBD003D9EF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E84228A920493CBD003D9EF6 /* YLTInputVIewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E84228AB20493CBD003D9EF6 /* YLTInputVIewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E8788FF3204CECBE0065B6BA /* YLTInputViewSupportFile */,
+				E84228BE20493CC5003D9EF6 /* YLTInputView */,
+				E84228AC20493CBD003D9EF6 /* AppDelegate.swift */,
+				E84228AE20493CBD003D9EF6 /* ViewController.swift */,
+				E84228B020493CBD003D9EF6 /* Main.storyboard */,
+				E84228B320493CBD003D9EF6 /* Assets.xcassets */,
+				E84228B520493CBD003D9EF6 /* LaunchScreen.storyboard */,
+				E84228B820493CBD003D9EF6 /* Info.plist */,
+			);
+			path = YLTInputVIewDemo;
+			sourceTree = "<group>";
+		};
+		E84228BE20493CC5003D9EF6 /* YLTInputView */ = {
+			isa = PBXGroup;
+			children = (
+				E84228C120493D66003D9EF6 /* YLTInputView.swift */,
+				E84228BF20493D5A003D9EF6 /* YLTInputToolBar.swift */,
+				E84228C320493DB7003D9EF6 /* YLTInputTextView.swift */,
+				E84228C520493DFD003D9EF6 /* YLTInputPhotoContainerView.swift */,
+				E8788FFA204D425D0065B6BA /* YLTInputPhotoContainerViewItem.swift */,
+				E8D57E02204E38FE00323E0D /* YLTInputExpressionsContainerView.swift */,
+				E8D57E04204E3A9500323E0D /* YLTInputExpressionsContainerViewCell.swift */,
+				E8A642B7204E5F5C00718A76 /* YLTInputAudioContainerView.swift */,
+				E8788FF1204CE6C20065B6BA /* YLTInputViewDefine.swift */,
+				E8788FF8204D13080065B6BA /* YLTInputViewConfig.swift */,
+				E8A642B9204E6F4500718A76 /* YLTInputProtocol.swift */,
+			);
+			path = YLTInputView;
+			sourceTree = "<group>";
+		};
+		E8788FF3204CECBE0065B6BA /* YLTInputViewSupportFile */ = {
+			isa = PBXGroup;
+			children = (
+				E8788FF6204D0C4E0065B6BA /* YLTInputView.xcassets */,
+			);
+			path = YLTInputViewSupportFile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E84228A820493CBD003D9EF6 /* YLTInputVIewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E84228BB20493CBD003D9EF6 /* Build configuration list for PBXNativeTarget "YLTInputVIewDemo" */;
+			buildPhases = (
+				48ACB773FF7BF5C6D306F416 /* [CP] Check Pods Manifest.lock */,
+				E84228A520493CBD003D9EF6 /* Sources */,
+				E84228A620493CBD003D9EF6 /* Frameworks */,
+				E84228A720493CBD003D9EF6 /* Resources */,
+				7DEFD75E2E187D97083097BD /* [CP] Embed Pods Frameworks */,
+				B64BA1A95F413CAD686F5172 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YLTInputVIewDemo;
+			productName = YLTInputVIewDemo;
+			productReference = E84228A920493CBD003D9EF6 /* YLTInputVIewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E84228A120493CBD003D9EF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Roo;
+				TargetAttributes = {
+					E84228A820493CBD003D9EF6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E84228A420493CBD003D9EF6 /* Build configuration list for PBXProject "YLTInputVIewDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E84228A020493CBD003D9EF6;
+			productRefGroup = E84228AA20493CBD003D9EF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E84228A820493CBD003D9EF6 /* YLTInputVIewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E84228A720493CBD003D9EF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8788FF7204D0C4E0065B6BA /* YLTInputView.xcassets in Resources */,
+				E84228B720493CBD003D9EF6 /* LaunchScreen.storyboard in Resources */,
+				E84228B420493CBD003D9EF6 /* Assets.xcassets in Resources */,
+				E84228B220493CBD003D9EF6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48ACB773FF7BF5C6D306F416 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YLTInputVIewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DEFD75E2E187D97083097BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YLTInputVIewDemo/Pods-YLTInputVIewDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YLTInputVIewDemo/Pods-YLTInputVIewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B64BA1A95F413CAD686F5172 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YLTInputVIewDemo/Pods-YLTInputVIewDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E84228A520493CBD003D9EF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8788FFB204D425D0065B6BA /* YLTInputPhotoContainerViewItem.swift in Sources */,
+				E8D57E03204E38FE00323E0D /* YLTInputExpressionsContainerView.swift in Sources */,
+				E8A642BA204E6F4500718A76 /* YLTInputProtocol.swift in Sources */,
+				E84228C620493DFD003D9EF6 /* YLTInputPhotoContainerView.swift in Sources */,
+				E8788FF2204CE6C20065B6BA /* YLTInputViewDefine.swift in Sources */,
+				E84228C420493DB7003D9EF6 /* YLTInputTextView.swift in Sources */,
+				E8D57E05204E3A9500323E0D /* YLTInputExpressionsContainerViewCell.swift in Sources */,
+				E84228AF20493CBD003D9EF6 /* ViewController.swift in Sources */,
+				E84228C220493D66003D9EF6 /* YLTInputView.swift in Sources */,
+				E8A642B8204E5F5C00718A76 /* YLTInputAudioContainerView.swift in Sources */,
+				E8788FF9204D13080065B6BA /* YLTInputViewConfig.swift in Sources */,
+				E84228AD20493CBD003D9EF6 /* AppDelegate.swift in Sources */,
+				E84228C020493D5A003D9EF6 /* YLTInputToolBar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E84228B020493CBD003D9EF6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E84228B120493CBD003D9EF6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E84228B520493CBD003D9EF6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E84228B620493CBD003D9EF6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E84228B920493CBD003D9EF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E84228BA20493CBD003D9EF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E84228BC20493CBD003D9EF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3607D750B6EAE30F3F7EC470 /* Pods-YLTInputVIewDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YLTInputVIewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YLTInputVIewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E84228BD20493CBD003D9EF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BB39034300BB8126A74C2C0 /* Pods-YLTInputVIewDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YLTInputVIewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YLTInputVIewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E84228A420493CBD003D9EF6 /* Build configuration list for PBXProject "YLTInputVIewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E84228B920493CBD003D9EF6 /* Debug */,
+				E84228BA20493CBD003D9EF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E84228BB20493CBD003D9EF6 /* Build configuration list for PBXNativeTarget "YLTInputVIewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E84228BC20493CBD003D9EF6 /* Debug */,
+				E84228BD20493CBD003D9EF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E84228A120493CBD003D9EF6 /* Project object */;
+}
