@@ -38,10 +38,11 @@ class ViewController: UIViewController {
     }
 
     
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        self.view.endEditing(true)
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
 //        sessionInputView.config.inputViewHeight.value = sessionInputView.config.toolbarHeight.value
-//    }
+        sessionInputView.resetInputView()
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

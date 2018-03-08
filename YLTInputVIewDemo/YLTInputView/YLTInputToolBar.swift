@@ -67,9 +67,9 @@ class YLTInputToolBar: UIView {
             let btn:UIButton = self.createButton(list[i])
             btn.tag = i + increment
             btn.rx.tap.subscribe(onNext: { [weak self] in
-                self?.delegete?.onPressInputExtendedItem(list[i])
                 btn.isSelected = !btn.isSelected
                 self?.setBtnSelected(btn.isSelected, btn.tag)
+                self?.delegete?.onPressInputExtendedItem(list[i])
             }).disposed(by: disposeBag)
             self.addSubview(btn)
             btn.snp.makeConstraints({ (make) in

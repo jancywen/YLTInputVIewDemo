@@ -73,6 +73,7 @@ class YLTInputView: UIView {
             var bottomHeight:CGFloat = 0
             if endFrame.origin.y != SCREEN_HEIGHT {
                 bottomHeight = endFrame.size.height
+                resetInputSubview()
             }
             if btnTap {
                 btnTap = false
@@ -215,7 +216,12 @@ extension YLTInputView {
     
     func resetInputView() {
         tapChangeFrame(0)
+        resetInputSubview()
+    }
+    
+    fileprivate func resetInputSubview() {
         inputExtendedItem = .none
+        toolbar.setBtnSelected(false, 0)
         photoContainerView?.isHidden = true
         expressionContainerView?.isHidden = true
         audioContainerView?.isHidden = true
