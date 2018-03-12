@@ -10,6 +10,7 @@ import Foundation
 
 import RxSwift
 
+
 struct YLTInputViewConfig {
     
     /// 扩展功能
@@ -25,10 +26,15 @@ struct YLTInputViewConfig {
     }
     
     /// inputView高度
-    let inputViewHeight = Variable<CGFloat>(92)
+     let inputViewHeight = Variable<CGFloat>(92)
+    
     /// toolbar 高度
     let toolbarHeight = Variable<CGFloat>(92)
     
+    /// bottom 高度
+    let bottomHeight = Variable<CGFloat>(0)
+    
+
     
     let inputViewExtendedList:Array<YLTInputExtendedType> = [.shoot,
                                                              .photo,

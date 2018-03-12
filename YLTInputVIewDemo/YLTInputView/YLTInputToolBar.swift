@@ -47,18 +47,14 @@ class YLTInputToolBar: UIView {
     }
     
     private func configInputToolBar() {
-        let tev = UITextView(frame: CGRect.zero)
+        let tev = UITextView(frame: CGRect(x: 16, y: 5, width: SCREEN_WIDTH - 32, height: 37))
         tev.layer.cornerRadius = 4
         tev.layer.masksToBounds = true
         tev.returnKeyType = .send
         tev.delegate = self
+        tev.font = UIFont(name: "PingFangSC-Regular", size: 16.0)
         self.addSubview(tev)
-        tev.snp.makeConstraints { (make) in
-            make.left.equalToSuperview().offset(16)
-            make.right.equalToSuperview().offset(-16)
-            make.top.equalToSuperview().offset(5)
-            make.height.equalTo(37)
-        }
+        
         inputTextView = tev
 
         
@@ -133,12 +129,37 @@ class YLTInputToolBar: UIView {
 
 extension YLTInputToolBar: UITextViewDelegate {
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        
+       textViewFrameChange(textView)
+        
         if text == "\n" {
             actionDelegate?.onSendText(textView.text)
             textView.text = ""
+            textViewFrameChange(textView)
             return false
         }else {
             return true
         }
     }
+    
+    func textViewFrameChange(_ textView: UITextView) {
+        let w = SCREEN_WIDTH - 32
+        let t_h = textView.text.heightWithConstrainedWidth(width: w, font: textView.font!)
+        let tev_h = max(t_h, 37)
+        config.toolbarHeight.value = tev_h + 55
+        
+        inputTextView.frame = CGRect(x: 16, y: 5, width: SCREEN_WIDTH - 32, height: tev_h)
+    }
+}
+
+
+extension String {
+    func heightWithConstrainedWidth(width: CGFloat, font: UIFont) -> CGFloat {
+        let constraintRect = CGSize(width: width, height: CGFloat.greatestFiniteMagnitude)
+        
+        let boundingBox = self.boundingRect(with: constraintRect, options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font: font], context: nil)
+        
+        return boundingBox.height + 5
+    }
+    
 }

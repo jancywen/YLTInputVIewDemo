@@ -99,6 +99,11 @@ extension YLTInputView:YLTInputToolBarDelegate {
             bar.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: h)
         }).disposed(by: disposeBag)
         
+        Observable.combineLatest(config.toolbarHeight.asObservable(), config.bottomHeight.asObservable()) {
+            $0 + $1
+            }.subscribe(onNext: { self.config.inputViewHeight.value = $0 })
+            .disposed(by: disposeBag)
+        
         
         toolbar = bar
     }
@@ -157,7 +162,7 @@ extension YLTInputView:YLTInputToolBarDelegate {
     }
     
     fileprivate func changeFrame(_ bottomHeight:CGFloat) {
-        config.inputViewHeight.value = config.toolbarHeight.value + bottomHeight
+        config.bottomHeight.value = bottomHeight
     }
     
     fileprivate func showPhotos() {
